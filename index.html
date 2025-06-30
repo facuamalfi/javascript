@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PreEntrega </title>
+    <!-- Link de css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sistema de turnos</title>
 </head>
+
 <body>
-    
-    <script src="js/index.js"></script>
+
+    <header class="header">
+        <h1>Estudio de Arquitectura - Turnos</h1>
+    </header>
+
+    <main>  
+
+    <!-- Formulario para pedir los datos -->
+    <div class="seccion">
+        <form id="form-turno">
+            <input type="text" id="nombre" placeholder="Nombre y Apellido" required />
+            <select id="dia" required>
+                <option value="">Seleccionar día</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sábado">Sábado</option>
+            </select>
+            <input type="time" id="hora" required />
+            <button type="submit">Agendar Turno</button>
+        </form>
+        <p id="error-mensaje"></p>
+    </div>
+
+    <!-- Lista con los turnos guardados -->
+    <div class="seccion">
+        <h2>Turnos Agendados</h2>
+        <ul id="lista-turnos"></ul>
+    </div>
+
+    </main>
+
+    <!-- Enlace con Javascript -->
+    <script src="js/sistema.js"></script>
 
 </body>
 </html>

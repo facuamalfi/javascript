@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: #282828;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: #282828;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Secciones */
+.seccion {
+  background-color: #f0f0f0;
+  padding: 25px 30px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+/* Formulario: Inputs y select */
+input[type="text"],
+select,
+input[type="time"] {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  min-width: 180px;
+}
+
+/* Focus para inputs */
+input[type="text"]:focus,
+select:focus,
+input[type="time"]:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+/* Botón Agendar Turno */
+button[type="submit"] {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Lista de turnos */
+ul#lista-turnos {
+  list-style: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Items de lista */
+ul#lista-turnos li {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* Botones eliminar */
+ul#lista-turnos li button {
+  background-color: #cc3300;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+ul#lista-turnos li button:hover {
+  background-color: #992200;
+}
+
+/* Mensaje error */
+#error-mensaje {
+  color: #cc3300;
+  margin-top: 10px;
+  font-weight: 600;
+  min-height: 1em;
+}
+
+/* Media query */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  input[type="text"],
+  select,
+  input[type="time"] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  ul#lista-turnos li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul#lista-turnos li button {
+    margin-top: 8px;
+    align-self: flex-end;
+  }
+}
