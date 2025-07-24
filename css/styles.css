@@ -12,6 +12,7 @@ body {
   color: #282828;
   padding: 20px;
   min-height: 100vh;
+  cursor: default;
 }
 
 /* Header */
@@ -28,6 +29,22 @@ body {
 }
 
 /* Secciones */
+.servicios-lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.servicios-lista li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f5f5f5;
+  border-left: 4px solid #282828;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 .seccion {
   background-color: #f0f0f0;
   padding: 25px 30px;
@@ -48,6 +65,15 @@ input[type="time"] {
   margin-right: 15px;
   margin-bottom: 15px;
   min-width: 180px;
+}
+
+input[type="text"]:focus-visible,
+select:focus-visible,
+input[type="time"]:focus-visible,
+button[type="submit"]:focus-visible,
+.boton-eliminar:focus-visible {
+  outline: 2px solid #0077cc;
+  outline-offset: 2px;
 }
 
 /* Focus para inputs */
@@ -80,6 +106,7 @@ ul#lista-turnos {
   list-style: none;
   font-size: 1rem;
   color: #333;
+  padding-left: 8px;
 }
 
 /* Items de lista */
@@ -91,11 +118,10 @@ ul#lista-turnos li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
-/* Botones eliminar */
-ul#lista-turnos li button {
+/* Botón eliminar */
+.boton-eliminar {
   background-color: #cc3300;
   border: none;
   color: white;
@@ -106,7 +132,7 @@ ul#lista-turnos li button {
   transition: background-color 0.3s;
 }
 
-ul#lista-turnos li button:hover {
+.boton-eliminar:hover {
   background-color: #992200;
 }
 
@@ -143,5 +169,6 @@ ul#lista-turnos li button:hover {
   ul#lista-turnos li button {
     margin-top: 8px;
     align-self: flex-end;
+    padding: 8px 16px;
   }
 }

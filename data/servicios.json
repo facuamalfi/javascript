@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nombre": "Consulta inicial",
+    "descripcion": "Evaluación del proyecto y necesidades del cliente."
+  },
+  {
+    "id": 2,
+    "nombre": "Diseño de planos",
+    "descripcion": "Diseño arquitectónico detallado y distribución de espacios."
+  },
+  {
+    "id": 3,
+    "nombre": "Asesoría de obra",
+    "descripcion": "Seguimiento y asesoramiento técnico durante la obra."
+  }
+]
